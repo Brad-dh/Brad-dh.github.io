@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineering Brief — Brad den Hollander</title>
+  <meta name="description" content="One-page engineering brief for Brad den Hollander." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .brief-wrap { max-width: 900px; margin: 0 auto; padding: 100px 24px 60px; }
+    .brief-top { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; }
+    .brief-top h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+    .brief-meta { color: var(--text-secondary); font-size: 0.95rem; }
+    .brief-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .brief-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+    .brief-card h2 { font-size: 1.05rem; margin-bottom: 8px; }
+    .brief-card p, .brief-card li { color: var(--text-secondary); line-height: 1.65; font-size: 0.92rem; }
+    .brief-card ul { padding-left: 18px; }
+    .brief-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+    @media (max-width: 760px) { .brief-grid { grid-template-columns: 1fr; } }
+    @media print {
+      body { background: #fff; color: #111; }
+      #navbar, .brief-actions { display: none; }
+      .brief-wrap { padding: 0; }
+      .brief-card { border: 1px solid #ccc; background: #fff; }
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar" class="scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">BdH</a>
+      <ul class="nav-links"><li><a href="index.html">Back to Portfolio</a></li></ul>
+    </div>
+  </nav>
+
+  <main class="brief-wrap">
+    <div class="brief-top">
+      <div>
+        <h1>Engineering Brief</h1>
+        <p class="brief-meta">Brad den Hollander · Physics-focused engineering candidate</p>
+      </div>
+      <div class="brief-meta">
+        <div>Email: braddh03@gmail.com</div>
+        <div>Location: Fort Macleod, Alberta</div>
+      </div>
+    </div>
+
+    <div class="brief-grid">
+      <section class="brief-card">
+        <h2>Value Proposition</h2>
+        <p>I combine physics-level analytical reasoning, computational workflows, and practical hands-on execution. I am targeting roles where system reliability, mechanical reasoning, and field constraints matter.</p>
+      </section>
+
+      <section class="brief-card">
+        <h2>Core Strengths</h2>
+        <ul>
+          <li>Applied physics and systems thinking</li>
+          <li>Numerical modeling and validation discipline</li>
+          <li>Practical troubleshooting and iterative improvement</li>
+          <li>Clear technical communication and documentation</li>
+        </ul>
+      </section>
+
+      <section class="brief-card">
+        <h2>Relevant Technical Work</h2>
+        <ul>
+          <li>Crystal Lattice Visualizer (Python/Streamlit/Plotly)</li>
+          <li>Computational physics assignments (DFT, splines, optimization, field simulation)</li>
+          <li>Solid state and topological systems research synthesis</li>
+        </ul>
+      </section>
+
+      <section class="brief-card">
+        <h2>Role Fit: Water-Control Systems</h2>
+        <ul>
+          <li>Comfortable with constrained decision-making</li>
+          <li>Safety and stability mindset under changing conditions</li>
+          <li>Strong learning curve in technical environments</li>
+          <li>Prepared to support field and operations teams</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="brief-actions">
+      <a class="btn btn-primary" href="mailto:braddh03@gmail.com">Contact Brad</a>
+      <button class="btn btn-outline" onclick="window.print()">Print / Save as PDF</button>
+      <a class="btn btn-outline" href="index.html#projects">View Case Studies</a>
+    </div>
+  </main>
+</body>
+</html>
