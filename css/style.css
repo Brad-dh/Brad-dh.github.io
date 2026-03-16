@@ -226,6 +226,7 @@ body {
   background-size: 130% auto;
   background-position-x: 50%;
   background-position-y: 50%;
+  background-repeat: no-repeat;
   filter: saturate(0.88) contrast(1.05) hue-rotate(-8deg);
   z-index: 0;
 }
@@ -1204,6 +1205,11 @@ body {
 }
 
 @media (max-width: 768px) {
+  #hero::before {
+    background-size: cover;
+    background-position-x: 35%;
+    background-position-y: 50%;
+  }
 
   .section {
     padding: 72px 0;

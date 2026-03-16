@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://braddenhollander.com/sitemap.xml
+Sitemap: https://brad-dh.github.io/sitemap.xml
